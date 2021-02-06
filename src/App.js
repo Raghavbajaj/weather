@@ -8,14 +8,58 @@ const api = {
 };
 
 function App() {
-  const [city, setcity] = useState("");
-  const [weath, setweather] = useState({});
+  const [city, setcity] = useState("Jamtara");
+  const [weath, setweather] = useState({
+    coord: {
+      lon: 86.8,
+      lat: 23.95,
+    },
+    weather: [
+      {
+        id: 721,
+        main: "Haze",
+        description: "haze",
+        icon: "50d",
+      },
+    ],
+    base: "stations",
+    main: {
+      temp: 25,
+      feels_like: 23.33,
+      temp_min: 25,
+      temp_max: 25,
+      pressure: 1017,
+      humidity: 50,
+    },
+    visibility: 4000,
+    wind: {
+      speed: 4.12,
+      deg: 20,
+    },
+    clouds: {
+      all: 0,
+    },
+    dt: 1612587920,
+    sys: {
+      type: 1,
+      id: 9144,
+      country: "IN",
+      sunrise: 1612572698,
+      sunset: 1612612928,
+    },
+    timezone: 19800,
+    id: 1269298,
+    name: "Jāmtāra",
+    cod: 200,
+  });
   const search = (e) => {
     if (e.key === "Enter") {
       fetch(`${api.base}weather?q=${city}&units=metric&appid=${api.key}`)
         .then((res) => res.json())
         .then((result) => {
-          setweather(result);
+          if (result.cod != "404") {
+            setweather(result);
+          }
           setcity("");
           console.log(result);
         });
