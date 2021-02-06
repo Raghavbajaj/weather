@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ExpensTracker/static/css/main.181fb2fe.chunk.css",
+    "main.js": "/ExpensTracker/static/js/main.59122099.chunk.js",
+    "main.js.map": "/ExpensTracker/static/js/main.59122099.chunk.js.map",
+    "runtime-main.js": "/ExpensTracker/static/js/runtime-main.0b6d13ac.js",
+    "runtime-main.js.map": "/ExpensTracker/static/js/runtime-main.0b6d13ac.js.map",
+    "static/js/2.6df4434a.chunk.js": "/ExpensTracker/static/js/2.6df4434a.chunk.js",
+    "static/js/2.6df4434a.chunk.js.map": "/ExpensTracker/static/js/2.6df4434a.chunk.js.map",
+    "index.html": "/ExpensTracker/index.html",
+    "static/css/main.181fb2fe.chunk.css.map": "/ExpensTracker/static/css/main.181fb2fe.chunk.css.map",
+    "static/js/2.6df4434a.chunk.js.LICENSE.txt": "/ExpensTracker/static/js/2.6df4434a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ExpensTracker/static/media/foggy.95069543.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b6d13ac.js",
+    "static/js/2.6df4434a.chunk.js",
+    "static/css/main.181fb2fe.chunk.css",
+    "static/js/main.59122099.chunk.js"
+  ]
+}
